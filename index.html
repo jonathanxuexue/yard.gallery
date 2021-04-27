@@ -9,12 +9,17 @@
     <body>
         <div id = "center">
             <i id = "footer"> <br> yard.gallery <br><br> </i> 
-            <div class = "header-img"></div>
+            <div class = "header-img" onclick = "changeImg()"></div>
             <br>
             <div class = "quote">
                 '...ephemeral art... is usually used to describe a work of art that only occurs once, like a happening, and cannot be embodied in any lasting object to be shown in a museum or gallery.'
             </div>
-        </div>
-        
+        </div>        
     </body>
-</html>
+<script>
+    function changeImg(e) {
+        document.getElementsByClassName('header-img')[0].style.background = "url('./assets/trimmings1-after.jpg')";
+        document.getElementsByClassName('header-img')[0].style.backgroundSize = "cover";
+    }
+</script>
+    </html>
